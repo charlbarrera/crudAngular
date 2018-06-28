@@ -1,0 +1,9 @@
+<form (submit)="create()">
+    <mat-form-field>
+        <input type="text" matInput placeholder="name" name="name" [(ngModel)]="newUser.name">
+    </mat-form-field>
+    <mat-form-field>
+        <input type="text" matInput placeholder="mail" name="mail" [(ngModel)]="newUser.mail">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Create</button>
+</form>
