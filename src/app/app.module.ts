@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { ListUsersComponent } from './list-users/list-users.component';
+import { TableUsersComponent } from './create-user/table-users/table-users.component';
 
 const appRouter: Routes=[
   {path:'', component: ListUsersComponent},
@@ -28,7 +29,8 @@ const appRouter: Routes=[
     AppComponent,
     NavBarComponent,
     CreateUserComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    TableUsersComponent
     
   ],
   imports: [

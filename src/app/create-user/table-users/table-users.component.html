@@ -1,0 +1,19 @@
+<ul *ngFor="let list of listUser">
+  <li>
+    {{list.name}} - {{list.name}} 
+    <button mat-raised-button color="primary"
+                  (click)="list.editable= !list.editable">edit</button>
+    <button mat-raised-button color="danger" (click)="delete(list)">
+      Delete
+    </button>              
+  </li>
+  <li *ngIf="list.editable">
+      <mat-form-field>
+        <input required type="text" matInput name="" id="" placeholder="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="mail">
+      </mat-form-field>
+      <button>Update</button>
+  </li>
+</ul>
